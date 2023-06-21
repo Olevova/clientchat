@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { CommentsForm } from "../CommentsForm/CommentsForm";
 import { CommentsList } from "../CommentsList/CommentsList";
 import io from "socket.io-client";
-const socket = io.connect("http://localhost:5050");
+const socket = io.connect("https://clientback1983.onrender.com");
 
 export const Chat = () => {
   const [userParams, setUserParams] = useState(null);
